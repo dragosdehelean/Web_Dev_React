@@ -3,9 +3,8 @@ import logo from './logo.svg';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import { DISHES } from './shared/dishes';
 import Menu from './components/MenuComponent';
-
 import './App.css';
-
+ 
 class App extends Component {
    constructor(props) {
       super(props);
