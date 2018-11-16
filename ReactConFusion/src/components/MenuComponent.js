@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Media, Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Media, Card, CardImg, CardBody,
    CardTitle } from 'reactstrap';
 
 class Menu extends Component {
@@ -18,7 +18,7 @@ class Menu extends Component {
    renderDish(dish) {
       if (dish != null)
          return(
-            <Media>
+            <Media >
                <Media left middle>
                   <Media object src={dish.image} alt={dish.name} />
                </Media>
@@ -54,9 +54,9 @@ class Menu extends Component {
                {menu}
             </div>
             <div className="row">
-            <div  className="col-12 col-md-7 mx-auto mt-5">
-               {this.renderDish(this.state.selectedDish)}
-            </div>
+              <div  className="col-12 col-md-7 mx-auto mt-5">
+                {this.renderDish(this.state.selectedDish)}
+              </div>
             </div>
          </div>
       );
